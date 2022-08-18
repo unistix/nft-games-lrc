@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    /*background-color: #CCFBFE;*/
+    /*border:2px solid red;*/
+    padding-top:50px ;
+}
+
+h2{
+
+    font-family: 'Press Start 2P';
+    font-size: 30px !important;
+    padding-top: 50px;
+    color: #10FFCB;
+
+}
+
+.container-fluid{
+    height: 100vh;
+    background-color: #5D737E;
+    /*border:2px solid blue;*/
+
+}
+
+.back{
+    
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
+    height: 225px;
+    width: 250px;
+    /*border:2px solid green;*/
+    position: relative;
+    
+    background-color: #10FFCB;
+    box-shadow: 0px 2px 5px #6D6B8A;
+}
+
+.front{
+    border-radius: 15px 15px 5px 5px;
+    margin:  auto;
+    /*border:2px solid yellow;*/
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: -27px;
+    background-color: #10FFCB;
+
+    z-index: 10;
+    box-shadow: 0px 1px 3px #6D6B8A;
+
+
+}
+
+.row{
+    margin:  auto;
+    height: 80%;
+    width:  100%;
+    position: absolute;
+    left: 15px;
+    top:  25px;
+}
+.col_{
+
+    /*border:2px solid blue;*/
+    
+    z-index: 10;
+    padding-right: 0 !important; 
+    padding-left: 0 !important;
+   
+ 
+
+    
+}
+.sideventL{
+    padding-right: 10px;
+
+}
+
+.sideventR{
+    padding-left: 10px;
+
+}
+
+
+
+.vent{
+    /*width:  100%;*/
+    border:2px solid grey;
+    margin-top: 2px ;
+    /*margin-right: 10px;*/
+    /*margin: 0,0,0,0;*/
+    opacity: 0.2;
+}
+
+.window{
+
+    border-radius: 25px;
+    /*border:2px solid yellow;*/
+    margin:  auto;
+    height: 80%;
+    width: 100%;
+
+    background-color: #FFFFFF;
+    background-image: url("hm-game.PNG");
+    background-size: 250px;
+    padding-left: 2px;
+    background-position: center top;
+     
+}

@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+body{
+    background-color: #D6BEFE; /*D6BEFE*/
+    color:  #000101;
+    font-family: 'Press Start 2P';
+    /*height: 100%;*/
+    height: 100vh; 
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;*/
+
+
+
+}
+
+main{
+
+    background-color: #D6BEFE; 
+    height: 100vh;
+}
+
+h1{
+	font-size: 22px;
+    margin-top: 20px;
+
+}
+
+h2{
+	font-size: 10px;
+
+}
+
+.purple{
+    background-color: #D6BEFE; /*D6BEFE*/
+}
+
+#final-message{
+	font-size: 10px;
+	color: green;
+}
+
+
+p{
+	font-size: 15px;
+}
+.background {
+    background-color: #D7BFFE; /*light pink*/
+    /*height: 100vh;*/
+    padding-top: 1px;
+}
+.svg-container{
+	height: 250;
+	width: 200;
+	/*border: 2px solid red;*/
+	width: 100%;
+	resize: both;
+ 	/*overflow: auto;*/
+}
+
+
+
+#play-button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    margin-left: 1em;
+    cursor: pointer;
+    background-color: #0D040D;
+}
+
+.game-container {
+	/*border: 2px solid red;*/
+	width: 100%;
+
+	/*resize: both;
+ 	overflow: auto;*/
+}
+
+.figure-container{
+    fill: transparent;
+    stroke: #0D040D;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+.figure-part{
+    display: none;
+}
+
+
+
+.game-window {
+	/*border: 2px solid orange;*/
+	margin-top: 10px;
+	padding-top: 5px;
+	width: 75%;
+}
+
+.figure-container {
+	/*border: 2px solid blue;*/
+}
+
+.wrong-letters-container{
+
+	/*border: 2px solid green;*/
+	color: green;
+    overflow-wrap: break-word;
+}
+
+.word{
+
+	/*border: 2px solid green;*/
+	color: #000101;
+    font-size: 5px;
+
+	/*width: 25%;*/
+    /*overflow: hidden;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+.letter{
+    border-bottom: 3px solid #000101;
+    display: inline-flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    height: 10px;
+    width: 12px;
+}
+
+.notification-container{
+	visibility:  hidden;
+}
