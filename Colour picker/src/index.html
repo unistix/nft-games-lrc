@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Picker</title> <!-- Name of the NFT -->
+  </head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> 
+
+
+
+<style>
+
+	h1 {
+    font-family: Lobster, Monospace;
+  }
+</style>
+
+<body>
+
+	<div class="container-fluid"> <!--onclick="randomColor"-->
+		<h1 class=text-center> Click to change colour!</h1> <!-- wierd charachters just allow you to use angle brackets -->
+	</div>
+
+	<script>
+		//const myIframe = document.getElementById("myIframe");
+
+		function randomColor (){
+
+
+			var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+			document.body.style.backgroundColor = randomColor;
+	
+
+		
+
+		}
+		document.body.addEventListener('click', randomColor);
+	</script>
+</body>
