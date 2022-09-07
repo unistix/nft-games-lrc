@@ -22,6 +22,15 @@
 
 /[Aa]ssets/Env*
 [Aa]ssets/Env*
+
+/[Aa]ssets/Env.cs
+[Aa]ssets/Env.cs
+
+/gamebites_playerprefs/Realm SDK Space Shooter/Assets/Env.cs
+/gamebites_playerprefs/Realm SDK Space Shooter/Assets/Env.cs
+
+/[Aa]ssets/Env.cs.meta
+[Aa]ssets/Env.cs.meta
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
