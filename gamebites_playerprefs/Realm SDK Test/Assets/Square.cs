@@ -12,19 +12,28 @@ public class Square : MonoBehaviour
     {
         realm = Realm.GetInstance();//acess DB
 
+
+
         //CRUD OPERATIONS - Read/Query
-            //check if color entityexists and if yes we don't need to create it again
+        //check if color entityexists and if yes we don't need to create it again
+        squareColor = realm.Find<ColorEntity>("square1");
+            if (squareColor == null)
+            {
+                //Only create the object if it can't be found.
+                squareColor = new ColorEntity("sqaure1");
+                //CRUD OPERATIONS - Write
+                realm.Write(() =>
+                {
+                    realm.Add(squareColor);
+                    //write ensures no other pocesses running similatanoesly - atomic action
+                });
+            }
+        
 
-        squareColor = new ColorEntity();
-        //CRUD OPERATIONS - Write
-        realm.Write(() =>
-        {
-            realm.Add(squareColor);
-            //write ensures no other pocesses running similatanoesly - atomic action
-        });
+       
 
 
-        SetColor();
+        //SetColor();
        
 
     }
@@ -32,10 +41,17 @@ public class Square : MonoBehaviour
     // Update is called once per frame
     private void OnMouseDown()
     {
+        //Whenever click, the object is also updated so we update the DB as well
+        
         Debug.Log("mse clkd");
-        squareColor.Red = Random.Range(0f, 1f);
-        squareColor.Green = Random.Range(0f, 1f);
-        squareColor.Blue = Random.Range(0f, 1f);
+        realm.Write(() =>
+        {
+            squareColor.Red = Random.Range(0f, 1f);
+            squareColor.Green = Random.Range(0f, 1f);
+            squareColor.Blue = Random.Range(0f, 1f);
+            //write ensures no other pocesses running similatanoesly - atomic action
+        });
+       
         SetColor();
     }
 
